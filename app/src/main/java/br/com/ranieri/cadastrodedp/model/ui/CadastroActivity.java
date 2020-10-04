@@ -8,7 +8,12 @@ import com.orhanobut.hawk.Hawk;
 
 import br.com.ranieri.cadastrodedp.R;
 
+
 public class CadastroActivity extends AppCompatActivity {
+
+    private UsuarioViewModel usuarioViewModel;
+    private Usuario usuarioCorrente;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
