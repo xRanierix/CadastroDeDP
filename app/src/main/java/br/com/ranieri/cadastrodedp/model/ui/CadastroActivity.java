@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.orhanobut.hawk.Hawk;
 
 import br.com.ranieri.cadastrodedp.R;
+import br.usjt.ucsist.cadbasico.model.Usuario;
+import br.usjt.ucsist.cadbasico.model.UsuarioViewModel;
 
 
 public class CadastroActivity extends AppCompatActivity {
