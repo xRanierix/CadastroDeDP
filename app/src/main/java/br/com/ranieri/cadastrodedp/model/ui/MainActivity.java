@@ -1,4 +1,4 @@
-package br.com.ranieri.cadastrodedp;
+package br.com.ranieri.cadastrodedp.model.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import br.com.ranieri.cadastrodedp.R;
 
 public class MainActivity extends AppCompatActivity {
 

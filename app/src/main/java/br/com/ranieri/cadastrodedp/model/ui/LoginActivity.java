@@ -1,4 +1,4 @@
-package br.com.ranieri.cadastrodedp;
+package br.com.ranieri.cadastrodedp.model.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.orhanobut.hawk.Hawk;
+
+import br.com.ranieri.cadastrodedp.R;
 
 public class LoginActivity extends AppCompatActivity {
 
