@@ -1,6 +1,7 @@
 package br.usjt.ucsist.cadbasico.model;
 
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "usuario")
@@ -13,6 +14,8 @@ public class Usuario {
     private String disciplina;
     private String senha;
     public Usuario(String nome, String curso, String disciplina, String senha) {
+
+        @Ignore
         this.nome = nome;
         this.curso = curso;
         this.disciplina = disciplina;
