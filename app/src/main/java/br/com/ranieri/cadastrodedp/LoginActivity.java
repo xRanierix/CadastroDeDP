@@ -12,7 +12,7 @@ import com.orhanobut.hawk.Hawk;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private TextView textViewNovoCadastro;
+    private TextView textViewCadastreSuaDP;
     private Button buttonLogin;
 
     @Override
@@ -21,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Hawk.init(this).build();
 
-        textViewNovoCadastro = findViewById(R.id.textViewNovoCadastro);
+        textViewCadastreSuaDP = findViewById(R.id.textViewCadastreSuaDP);
         buttonLogin = findViewById(R.id.buttonLogin);
 
 
