@@ -5,6 +5,8 @@ import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "usuario")
+
+@Ignore
 public class Usuario {
 
     @PrimaryKey(autoGenerate = true)
@@ -15,7 +17,7 @@ public class Usuario {
     private String senha;
     public Usuario(String nome, String curso, String disciplina, String senha) {
 
-        @Ignore
+
         this.nome = nome;
         this.curso = curso;
         this.disciplina = disciplina;
