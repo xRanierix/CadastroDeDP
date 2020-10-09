@@ -1,4 +1,4 @@
-package br.com.ranieri.cadastrodedp.model.ui;
+package br.usjt.ucsist.cadbasico.ui;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,10 +23,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private TextView textViewCadastreSuaDP;
     private Button buttonLogin;
-    private br.usjt.ucsist.cadbasico.model.UsuarioViewModel;
+    private br.usjt.ucsist.cadbasico.model.UsuarioViewModel usuarioViewModel;
     private br.usjt.ucsist.cadbasico.model.Usuario usuarioCorrente;
-    private EditTExt editTextUsuario;
-    private EditTExt editTextSenha;
+    private EditText editTextUsuario;
+    private EditText editTextSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +36,9 @@ public class LoginActivity extends AppCompatActivity {
 
         editTextUsuario = findViewById(R.id.editTextUsuario);
         editTextSenha = findViewById(R.id.editTextSenha);
+        textViewCadastreSuaDP = findViewById(R.id.CadastreSuaDP);
 
-        EditText textViewCadastreSuaDP;
-        textViewCadastreSuaDP = findViewById(R.id.textViewCadastreSuaDP);
+
         buttonLogin = findViewById(R.id.buttonLogin);
 
         usuarioViewModel = new ViewModelProvider(this).get(UsuarioViewModel.class);

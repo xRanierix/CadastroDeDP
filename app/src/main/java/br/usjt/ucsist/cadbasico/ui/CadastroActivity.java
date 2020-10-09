@@ -1,4 +1,4 @@
-package br.com.ranieri.cadastrodedp.model.ui;
+package br.usjt.ucsist.cadbasico.ui;
 
 import android.os.Bundle;
 import android.view.View;
