@@ -51,29 +51,28 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void updateUsuario(Usuario usuario){
+    private void updateUsuario(Usuario usuario) {
         usuarioCorrente = usuario;
     }
 
 
     @Override
-    public void onResume(){
+    public void onResume() {
         super.onResume();
-        if(Hawk.contains("tem_cadastro")){
+        if (Hawk.contains("tem_cadastro")) {
 
-            habilitarLogin();
+            if (Hawk.get("tem_cadastro")) {
+                habilitarLogin();
 
-            if(Hawk.get("tem_cadastro")){
+            } else {
 
                 desabilitarLogin();
-
             }
-        }else{
-
-            desabilitarLogin();
+        } else {
+                desabilitarLogin();
         }
-
     }
+
 
     private void habilitarLogin(){
         textViewCadastreSuaDP.setVisibility(View.GONE);
